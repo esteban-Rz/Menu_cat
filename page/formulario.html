@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/stile.css">
+    <title>formulario</title>
+</head>
+<body class="bg-[#E6E6E6]">
+    <!--barra de navegacion-->
+        <nav class="bg-[#f7b980]  fixed w-full z-50 top-0 left-0 border-b border-default">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="/img/gato_cabecera.webp" class="h-7" alt="cat logo" />
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Gurmet Cats</span>
+        </a>
+     <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <a href="https://wa.me/+593992625210" 
+        class="text-black bg-[#E6E6E6] hover:bg-[#dcdcdc] box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
+            Contáctenos
+        </a>
+
+        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-body text-bl rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="https://www.youtube.com/watch?v=LPu_Qu9UopQ" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+        <a href="/index.html" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Inicio</a>
+        </li>
+        <li>
+        <a href="/page/menu_semanal.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">tienda</a>
+        </li>
+        <li>
+        <a href="https://wa.me/+593992625210" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Delivery</a>
+        </li>
+        <li>
+        <a href="https://www.consumer.es/mascotas/cocina-casera-para-perros-cinco-recetas-rapidas-saludables-y-baratas.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Recetas</a>
+        </li>
+    </ul>
+    </div>
+    </div>
+</nav>
+    <!--formulario-->
+<div id="formulario">
+    <h2>Registro de usuario</h2>
+  <form action="" id="RegistroForm">
+    <div>
+      <label for="username">Usuario</label>
+      <br>
+      <input type="text" name="username" id="username" placeholder="gato montes">
+      <br>
+      <small class="error" id="err-username"></small>
+      <br>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <br>
+      <input type="email" name="email" id="email" placeholder="correo@ejemplo.com">
+      <br>
+      <small class="error" id="err-email"></small>
+      <br>
+    </div>
+
+    <div>
+      <label for="password">Contraseña</label>
+      <br>
+      <input type="password" name="password" id="password" placeholder="el nombre de tu ex ">
+      <br>
+      <small class="error" id="err-password"></small>
+      <br>
+    </div>
+
+    <div>
+      <label for="confirmPassword">Confirmar contraseña</label>
+      <br>
+      <input type="password" name="confirmPassword" id="confirmPassword" placeholder="el nombre de tu ex ">
+      <br>
+      <small class="error" id="err-confirmPassword"></small>
+      <br>
+    </div>
+
+    <button type="submit">Crear cuenta</button>
+    <br>
+    <button type="reset">Limpiar</button>
+  </form>
+</div>
+
+<script src="/js/formulario.js"></script>
+</body>
+</html>

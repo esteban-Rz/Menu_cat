@@ -8,7 +8,8 @@ const botonMostrarCompras = document.getElementById("mostrarCompras");
 const contadorCompra = document.getElementById("contador-carrito");
 const imprimirCompras = document.getElementById("imprimirCompras");
 const botonlimpiar = document.getElementById ("limpiar");
-
+const totalCompras = document.getElementById("total");
+const botoncompras = document.getElementById("compras");
 // Productos
 const productoUno = {
   id: 1,
@@ -52,7 +53,17 @@ botonMostrarCompras.addEventListener("click", () => {
     const li = document.createElement("li");
     li.textContent = `${item.name} - $${item.price}`;
     imprimirCompras.appendChild(li);
+    total = cart.reduce((acc ,item) => acc + item.price,0);
+    totalCompras.textContent =  "$"+ total;
+
   });
 });
 botonlimpiar.addEventListener("click",() => {
-  imprimirCompras.innerHTML = "";})
+  imprimirCompras.innerHTML = ""
+  totalCompras.innerHTML = ""
+  contadorCompra.innerHTML =""
+});
+
+botoncompras.addEventListener("click" , ()=> {
+  alert ("Compra realizada")
+})

@@ -6,14 +6,14 @@
     <link href="/dist/output.css" rel="stylesheet">
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
     <link rel="stylesheet" href="/css/estilos.css">
-    <title>menu</title>
+    <title>tienda</title>
     
 </head>
 <body class="bg-[#E6E6E6]">
 
     <nav class="bg-[#f7b980]  fixed w-full z-50 top-0 left-0 border-b border-default" id="inicio">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+  <a href="./historia.html" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="/img/gato_cabecera.webp" class="h-7" alt="cat logo" />
       <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Gurmet Cats</span>
   </a>
@@ -31,13 +31,16 @@
         <a href="/index.html" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Inicio</a>
       </li>
       <li>
-        <a href="#inicio" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Menu semanal</a>
+        <a href="#inicio" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">tienda</a>
       </li>
       <li>
         <a href="https://wa.me/+593992625210" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Delivery</a>
       </li>
       <li>
         <a href="https://www.consumer.es/mascotas/cocina-casera-para-perros-cinco-recetas-rapidas-saludables-y-baratas.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Recetas</a>
+      </li>
+      <li>
+        <a href="/page/formulario.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">formulario</a>
       </li>
     </ul>
   </div>
@@ -138,12 +141,42 @@
  </div>
  <div class="mt-4">
             <span id="contador-carrito" class="text-lg font-bold">Carrito: 0</span>
+            <aside class="carrito">
+                
         </div>
+<section id="areaCompras" class="max-w-md mx-auto bg-white shadow-lg rounded-xl p-6 space-y-6">
+  <!-- Lista de compras -->
+  <div id="imprimirCompras" class="space-y-2">
+    <!-- Aquí se renderizan los items -->
+  </div>
 
-<div id="imprimirCompras"> 
-   
-</div>
- <button type="button" id="limpiar" class="text-black bg-[#E6E6E6] hover:bg-[#E6E6E6] box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">limpiar</button>
+  <!-- Total -->
+  <p class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+    <span>Total:</span>
+    <span id="total" class="text-green-600 font-bold">0</span>
+  </p>
+
+  <!-- Botones -->
+  <div id="botonesCarrito" class="flex gap-4">
+    <button 
+      type="button" 
+      id="compras" 
+      class="flex-1 bg-green-500 hover:bg-green-600 text-black font-medium py-2 px-4 rounded-lg shadow-md transition duration-200 ease-in-out">
+      Comprar
+    </button>
+
+    <button 
+      type="button" 
+      id="limpiar" 
+      class="flex-1 bg-red-500 hover:bg-red-600 text-black font-medium py-2 px-4 rounded-lg shadow-md transition duration-200 ease-in-out">
+      Limpiar
+    </button>
+  </div>
+</section>
+
+            
+
+</section> 
  <!--fothers-->
 <footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">

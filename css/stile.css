@@ -1,0 +1,18 @@
+input {
+    border: 1px solid palegreen;
+    padding: 10 px ;
+    outline:  none;
+    transition: border-color 0.3s;
+}
+/*clase en js que se activa al ver el error */
+.input-error {
+    border: 2px solid red;
+
+}
+
+.error {
+    color: red;
+    font-size:  0.8rem;
+    margin-top: 5px;
+    display: block;
+}
